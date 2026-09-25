@@ -31,7 +31,7 @@ object GeminiFoodAnalyzer {
         bitmap: Bitmap,
         customMealHint: String? = null
     ): Result<FoodAnalysisResult> = withContext(Dispatchers.IO) {
-        val apiKey = BuildConfig.GEMINI_API_KEY
+        val apiKey = AQ.Ab8RN6LBDh1joo6vK7jLtjKyp6tDLBh7mT8RKTQDghWSXvt9uw
 
         val base64Image = bitmapToBase64(bitmap)
         val promptText = buildPrompt(customMealHint)
