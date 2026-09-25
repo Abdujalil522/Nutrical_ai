@@ -19,13 +19,26 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
-    - name: Find gradlew and build APK
+    - name: Setup Gradle
+      uses: gradle/actions/setup-gradle@v3
+
+    - name: Build with Gradle
       run: |
-        GRADLE_DIR=$(find . -name "gradlew" -exec dirname {} \; | head -n 1)
-        echo "Loyiha papkasi: $GRADLE_DIR"
-        cd "$GRADLE_DIR"
-        chmod +x gradlew
-        ./gradlew assembleDebug --stacktrace
+        GRADLEW_PATH=$(find . -name "gradlew" | head -n 1)
+        if [ -n "$GRADLEW_PATH" ]; then
+          PROJECT_DIR=$(dirname "$GRADLEW_PATH")
+          cd "$PROJECT_DIR"
+          chmod +x gradlew
+          ./gradlew assembleDebug --stacktrace
+        else
+          echo "Gradlew fayli topilmadi, sistemadagi Gradle ishlatilmoqda..."
+          # Loyiha joylashgan papkani topamiz
+          BUILD_GRADLE_PATH=$(find . -name "build.gradle*" | head -n 1)
+          if [ -n "$BUILD_GRADLE_PATH" ]; then
+            cd $(dirname "$BUILD_GRADLE_PATH")
+          fi
+          gradle assembleDebug --stacktrace
+        fi
 
     - name: Upload APK Artifact
       uses: actions/upload-artifact@v4
