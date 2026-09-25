@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">NutriCal AI</string>
+    <string name="tagline">Aqlli kaloriya va taom tahlilchisi</string>
+    <string name="login_title">Xush kelibsiz</string>
+    <string name="signup_title">Ro\'yxatdan o\'tish</string>
+    <string name="email_hint">Elektron pochta</string>
+    <string name="password_hint">Parol</string>
+    <string name="btn_login">Kirish</string>
+    <string name="btn_signup">Ro\'yxatdan o\'tish</string>
+    <string name="no_account">Hisobingiz yo\'qmi? Ro\'yxatdan o\'ting</string>
+    <string name="have_account">Hisobingiz bormi? Tizimga kiring</string>
+    
+    <!-- Onboarding Steps -->
+    <string name="step_gender_title">Jinsingizni tanlang</string>
+    <string name="gender_male">Erkak</string>
+    <string name="gender_female">Ayol</string>
+    <string name="step_age_title">Yoshingiz nechida?</string>
+    <string name="step_metrics_title">Bo\'yingiz va hozirgi vazningiz</string>
+    <string name="step_goal_title">Asosiy maqsadingiz nima?</string>
+    <string name="step_target_weight_title">Maqsadli vazningiz</string>
+    <string name="step_activity_title">Kunlik harakat darajangiz</string>
+    
+    <!-- Goals -->
+    <string name="goal_lose">Ozish (Vazn tashlash)</string>
+    <string name="goal_gain">Vazn yig\'ish</string>
+    <string name="goal_muscle">Baqquvvat bo\'lish (Mushak)</string>
+    <string name="goal_maintain">Formani saqlash</string>
+    
+    <!-- Activity Levels -->
+    <string name="act_sedentary">Kam harakat (O\'tirib ishlash)</string>
+    <string name="act_light">Yengil faol (Haftada 1-3 kun yengil mashq)</string>
+    <string name="act_moderate">O\'rtacha faol (Haftada 3-5 kun sport)</string>
+    <string name="act_very">Juda faol (Har kuni faol mashg\'ulot)</string>
+    <string name="act_extreme">Professional sport / Og\'ir jismoniy mehnat</string>
+    
+    <!-- Calculating / Animation screen -->
+    <string name="calc_title">Sizning individual rejangiz tuzilmoqda…</string>
+    <string name="calc_bmr_step">BMR (Asosiy moddalar almashinuvi) hisoblanmoqda</string>
+    <string name="calc_tdee_step">Kunlik kaloriya sarfi (TDEE) hisoblanmoqda</string>
+    <string name="calc_macros_step">Oqsil, yog\' va uglevod me\'yorlari taqsimlanmoqda</string>
+    <string name="calc_done">Hammasi tayyor!</string>
+    <string name="btn_start_journey">Ilovani boshlash</string>
+
+    <!-- Dashboard -->
+    <string name="nav_dashboard">Bosh sahifa</string>
+    <string name="nav_scanner">AI Skaner</string>
+    <string name="nav_history">Tarix</string>
+    <string name="nav_profile">Profil</string>
+    <string name="calories_left">Qolgan kaloriya</string>
+    <string name="calories_consumed">Iste\'mol qilindi</string>
+    <string name="daily_norm">Kunlik me\'yor</string>
+    <string name="burn_goal">Sarflangan energiya</string>
+    
+    <string name="protein">Oqsillar</string>
+    <string name="fats">Yog\'lar</string>
+    <string name="carbs">Uglevodlar</string>
+    <string name="gram_unit">g</string>
+    <string name="kcal_unit">kkal</string>
+    
+    <string name="meal_breakfast">Norashta</string>
+    <string name="meal_lunch">Tushlik</string>
+    <string name="meal_dinner">Kechki ovqat</string>
+    <string name="meal_snack">Tamaddi</string>
+    
+    <string name="scan_food">Taomni skanerlash</string>
+    <string name="take_photo">Rasmga olish</string>
+    <string name="choose_gallery">Galereyadan tanlash</string>
+    <string name="analyzing_food">AI taomni tahlil qilmoqda…</string>
+</resources>

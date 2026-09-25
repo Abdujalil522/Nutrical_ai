@@ -1,0 +1,6 @@
+{
+  "name": "NutriCal AI",
+  "description": "AI orqali ovqatlarni suratga olib kaloriyalarni va makrolarni hisoblovchi zamonaviy ilova",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
